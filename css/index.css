@@ -12,27 +12,33 @@ a{
 .mainArea{
     width: 1000px;
     height: 900px;
-    background: #eee;
+    background: #f99;
     position: absolute;
     left: 50%;
     margin-left: -500px;
 }
 
 
-.headimg{
+.headimgArea{
     position: absolute;
     left: 50%;
-    width: 500px;
-    margin-left: -250px;
-    margin-top: 250px;
+    width: 1000px;
+    margin-left: -500px;
+    margin-top: 160px;
 }
 
-.headimg img{
-    width: 500px;
+.headimgArea img.headimg{
+    width: 160px;
     text-align: center;
-    
+    margin-left: 30px;
 }
-
+.headimgArea img.checkBtn{
+    width: 100px;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 30px;
+    cursor: pointer;
+}
 
 .btns{
     position: absolute;

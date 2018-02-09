@@ -15,8 +15,17 @@
 <body>
 
     <div class="mainArea">
-        <div class="headimg">
-            <img src="img/1.jpg" id="changeImg">
+        <div class="headimgArea">
+            <img src="img/default.jpg" id="changeImg1" class="headimg">
+            <img src="img/default.jpg" id="changeImg2" class="headimg">
+            <img src="img/default.jpg" id="changeImg3" class="headimg">
+            <img src="img/default.jpg" id="changeImg4" class="headimg">
+            <img src="img/default.jpg" id="changeImg5" class="headimg">
+            <img src="img/no.png" id="checkResult1" onclick="checkResult(event)" class="checkBtn">
+            <img src="img/no.png" id="checkResult2" onclick="checkResult(event)" class="checkBtn">
+            <img src="img/no.png" id="checkResult3" onclick="checkResult(event)" class="checkBtn">
+            <img src="img/no.png" id="checkResult4" onclick="checkResult(event)" class="checkBtn">
+            <img src="img/no.png" id="checkResult5" onclick="checkResult(event)" class="checkBtn">
     
     
         </div>
@@ -24,9 +33,10 @@
             <a class="btn" href="#" onclick="begainImg()">开始抽奖</a>
             <a class="btn" href="#" onclick="stopImg()">停止抽奖</a>
             
+            <a href="#" class="btn" onclick="viewPerson()">查看中奖名单<span id="personNum">（0）</span></a>
         </div>
 
-        <div>   
+        <div id="selectArea">   
             <input type="file" multiple id="selectFile">
             <button onclick="readFiles()">get</button>
         </div>
